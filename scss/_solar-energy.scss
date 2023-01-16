@@ -1,0 +1,1004 @@
+html {
+    &.lock-scroll {
+        overflow: hidden;
+    }
+}
+
+main {
+    .s-hero-each-service {
+        width: 100%;
+        height: 60rem;
+        margin-top: 10.5rem;
+        position: relative;
+        
+
+        &.solar-energy {
+            background-image: url('../imgs/s-hero-thumb-energia-solar.png');
+        }
+
+        &.energy-management {
+            background: url('../imgs/banner-gestao-de-energia.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        &.energy-efficiency {
+            background: url('../imgs/analise_efieiciencia_energetica.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        &.capacitors-bank {
+            background: url('../imgs/banco_de_capacitores.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        &.electrical-panels {
+            background: url('../imgs/quadros-eletricos-service.png');
+            background-repeat: no-repeat;
+            background-size: cover; 
+        }
+
+        &.electrical-projects {
+            background: url('../imgs/projetos-eletricos-service.png');
+            background-repeat: no-repeat;
+            background-size: cover; 
+        }
+
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right;
+        z-index: 5;
+    
+        display: flex;
+        align-items: center;
+
+        .tag-section {
+            background-color: white;
+            color: $brand-normal-blue;
+            margin-bottom: 1.5rem;
+        }
+    
+    
+        .text {
+            width: 100%;
+        }
+    
+    
+    
+        .actions {
+            @include flex(row, center, space-between);
+            width: 100%;
+            max-width: 20.8rem;
+            
+            margin-top: 2.5rem;
+        }
+    
+    
+        &::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: linear-gradient(90deg, #002EFF 21.8%, rgba(0, 46, 255, 0) 43.19%); 
+            z-index: -1;
+        }
+    }
+
+    .s-info-service {
+        margin-top: 7.3rem;
+        margin-bottom: 8rem;
+
+        .container {
+            display: flex;
+            align-items: center; 
+            flex-wrap: wrap;
+            column-gap: 11.2rem;
+            row-gap: 7rem;
+            
+
+           
+
+        }
+
+        .services-nav {
+            width: 100%;
+            max-width: 41.6rem;
+            background-color: #F6F8FF;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 4rem 0;
+            
+            .content {
+                width: 100%;
+                max-width: 80%;
+                h3 {
+                    font-family: 'Sora';
+                    font-weight: 700;
+                    font-size: 2.5rem;
+                    line-height: 3.2rem;
+                    color: #131313;
+                    padding-bottom: 1.9rem;
+
+                    margin-bottom: 3.4rem;
+
+                    width: 100%;
+                    max-width: 25rem;
+
+                    border-bottom: 1px solid rgba($color: #000000, $alpha: .1);
+                }
+
+                nav {
+                    ul {
+                        display: flex;
+                        flex-wrap: wrap;
+                        align-items: center;
+                        justify-content: space-between;
+                        column-gap: 3rem;
+                        li {
+                            &:not(:last-child) {
+                                margin-bottom: 3rem;
+                            }
+
+                            a {
+                                display: flex;
+                                align-items: center;
+                                width: 100%;
+                                max-width: 22.4rem;
+
+                                &:hover {
+                                    span {
+                                        opacity: 1;
+                                        text-decoration-line: underline;
+                                        color: $brand-dark-blue;
+                                    }
+                                }
+
+                                span {
+                                    display: inline-block;
+                                    font-weight: 400;
+                                    font-size: 1.7rem;
+                                    line-height: 2.5rem;
+                                    color: $text-color;
+
+                                    margin-right: 1.5rem;
+                                    opacity: .8;
+
+                                    &.active {
+                                        opacity: 1;
+                                        color: $brand-dark-blue;
+                                        font-weight: 600;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            
+
+        }
+
+        .info-solar-page {
+            width: 100%;
+            max-width: 67.2rem;
+
+            h2 {
+                width: 100%;
+                max-width: 54.4rem;
+                margin-bottom: 3.5rem;
+            }
+
+            p {
+                font-weight: 400;
+                font-size: 1.7rem;
+                line-height: 2.5rem;
+                color: $text-color;
+
+                opacity: 0.7;
+
+                &:not(:last-child) {
+                    margin-bottom: 3.5rem;
+                }
+            }
+        }
+    }
+
+    .s-geral-solar-energy {
+        
+        &.solar-energy-page {
+            background-color: #f4f7ff;
+            padding-bottom: 10rem;
+            .solar-02 {
+                padding-top: 6.7rem;
+            }
+
+            .investir-energia-solar {
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+                justify-content: center;
+                column-gap: 13.9rem;
+                row-gap: 5rem;
+
+                .text {
+                    width: 100%;
+                    max-width: 47.6rem;
+                    
+                    h3 {
+                        font-family: 'Sora';
+                        font-weight: 700;
+                        font-size: 3.2rem;
+                        line-height: 4rem;
+                        
+                        color: $brand-dark-blue;
+                        margin-bottom: 4.5rem;
+                    }
+
+                    p {
+                        font-weight: 400;
+                        font-size: 1.7rem;
+                        line-height: 2.5rem;
+
+                        color: $text-color;
+                        
+                        opacity: 0.7;
+
+                        &:not(:last-child) {
+                            margin-bottom: 3rem;
+                        }
+                    }
+                }
+
+                .image {
+                    max-width: 48%;
+                }
+                
+            }
+        }
+    }
+
+    .s-watch-videos {
+        text-align: center;
+        display: flex;
+        margin-top: 10rem;
+
+        &.energia-solar {
+            .s-video-popup {
+                position: fixed;
+                top: 0;
+                left: 0;
+                z-index: 2000;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                pointer-events: none;
+
+                &.active {
+                    .overlay {
+                        opacity: 1;
+                        pointer-events: all;
+                    }
+    
+                    .video-content {
+                        transform: translateY(0);
+                        opacity: 1;
+                        pointer-events: all;
+                    }
+                }
+        
+                .overlay {
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    z-index: 0;
+                    background-color: rgba($color: #000000, $alpha: 0.8);
+                    opacity: 0;
+                    transition: all .3s;
+                }
+        
+        
+                .video-content {
+                    transform: translateY(-30px);
+                    opacity: 0;
+                    transition: all .3s;
+                    pointer-events: none;
+                    .btn-close {
+                        position: absolute;
+                        z-index: 5;
+                        top: 0rem;
+                        right: 0rem;
+                        width: 4rem;
+                        height: 4rem;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        background-color: white;
+                        cursor: pointer;
+                        transition: all .3s;
+            
+                        &:hover {
+                            background-color: $gray-02;
+                        }
+            
+                        img {
+                            max-width: 1.8rem;
+                        }
+                    }
+            
+            
+                    position: relative;
+                    z-index: 2000;
+                    width: 100%;
+                    max-width: calc(1920px/2);
+                    max-height: calc(1080px/2);
+                    aspect-ratio: 16 / 9;
+                    padding: 2rem;
+            
+                    iframe {
+                        z-index: 2000;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+
+        h2 {
+            margin-bottom: 4rem;
+        }
+
+        .videos {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            row-gap: 2.6rem;
+            margin-bottom: 5rem;
+
+            .video {
+                width: 49%;
+                aspect-ratio: 16 / 9;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                cursor: pointer;
+                transition: all .3s;
+
+
+                .image {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+
+                .icon-play {
+                    position: absolute;
+                }
+
+                &:hover {
+                    &::before {
+
+                        background-color: rgba($color: $brand-dark-blue, $alpha: .6);
+                    }
+                    
+                }
+
+                &::before {
+                    content: '';
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    background-color: rgba($color: $brand-dark-blue, $alpha: .4);
+                    transition: all .3s;
+                }
+
+ 
+            }
+        }
+
+        .btn {
+           margin: 0 auto; 
+        }
+    }
+
+    .s-hero-about-service {
+        width: 100%;
+        height: 50rem;
+        margin-top: 7rem;
+        position: relative;
+    
+        background-image: url('../imgs/banner-services.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right;
+        z-index: 5;
+    
+        display: flex;
+        align-items: center;
+
+    
+        .text {
+            width: 100%;
+            max-width: 36.2rem;
+
+            h2 {
+                font-size: 4.2rem;
+                line-height: 5.3rem;
+                margin-bottom: 2.2rem;
+                color: white;
+            }
+
+            p {
+                font-weight: 400;
+                font-size: 2rem;
+                line-height: 2.4rem;
+                
+                color: #FFFFFF;               
+            }
+        }
+    
+    
+    
+        .actions {
+            @include flex(row, center, space-between);
+            width: 100%;
+            max-width: 20.8rem;
+            
+            margin-top: 2.5rem;
+        }
+    
+    
+        &::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: linear-gradient(90deg, #002EFF 21.8%, rgba(0, 46, 255, 0) 43.19%); 
+            z-index: -1;
+        }
+    }
+
+    .s-faq {
+        margin-bottom: 10rem;
+        .container {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .text {
+            width: 100%;
+            max-width: 30.4rem;
+
+            h2 {
+                margin-bottom: 1.4rem;
+            }
+        }
+
+        .accordion {
+            width: 100%;
+            max-width: 86.4rem;
+            
+            ul {
+                .accordion-item {
+                    &:not(:last-child) {
+                        margin-bottom: 2rem;
+                    }
+
+                    &.active {
+                        .accordion-header {
+                            .arrow-down {
+                                transform: rotate(180deg);
+                            }
+                        }
+
+                        .accordion-content {
+                            height: 100%;
+                            padding: 2.8rem 3.3rem;
+                            opacity: 1;
+                            pointer-events: all;
+                        }
+                    }
+
+                    .accordion-header {
+                        background-color: #F0F0F0;
+                        padding: 2.1rem 3.3rem;
+
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+
+                        cursor: pointer;
+                        
+                        .arrow-down {
+                            transform: rotate(0);
+                            transition: all .3s;
+                        }
+
+                        h4 {
+                            font-family: 'Sora';
+                            font-weight: 600;
+                            font-size: 1.8rem;
+                            line-height: 2.3rem;
+
+                            color: #000000;
+                            
+                        }
+                    }
+
+                    .accordion-content {
+                        background-color: #E9E9E9;
+                        height: 0;
+                        padding: 0;
+                        opacity: 0;
+                        pointer-events: none;
+                        transition: all .3s;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media(max-width: 1500px) {
+    main {
+        .s-hero-each-service {
+            height: 48rem;
+        }
+    }
+}
+
+@media(max-width: 1300px) {
+    main {
+        .s-watch-videos {
+            .videos {
+                justify-content: center;
+                flex-direction: column;
+
+                .video {
+                    width: 60%;
+                }
+            }
+        }
+    }
+
+}
+
+@media(max-width: 1250px) {
+    main {
+        
+        .s-hero-each-service {
+            height: 40rem;
+            &::after {
+                position: absolute;
+                content: '';
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                z-index: -1;
+                background-color: rgba($color: #000000, $alpha: .2);
+            }
+    
+    
+            &::before {
+                opacity: .9;
+                background: linear-gradient(90deg, #002EFF 36.8%, rgba(0, 46, 255, 0) 92.19%);
+            }
+
+            .container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                .text {
+                    text-align: center;
+                }
+
+                .actions {
+                    justify-content: center;
+                }
+            }
+        }
+
+        .s-info-service {
+            .container {
+                justify-content: center;
+    
+    
+            }
+    
+        
+    
+            .info-solar-page {
+                text-align: center;
+    
+                h2 {
+                    margin: 0 auto;
+                    margin-bottom: 4.6rem;
+                }
+            }
+        }
+
+        .s-geral-solar-energy {
+            &.solar-energy-page {
+                text-align: center;
+
+                .investir-energia-solar {
+                    flex-direction: column-reverse;
+                    row-gap: 0rem;
+                    .text {
+                        h3 {
+                            margin-bottom: 4.6rem;
+                        }
+
+                    
+                    }
+
+                    .image {
+                        margin-bottom: 5.4rem;
+                        max-width: 80%;
+                    }
+                    
+                }
+            }
+        }
+        
+        .s-hero-about-service {
+            &::after {
+                position: absolute;
+                content: '';
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                z-index: -1;
+                background-color: rgba($color: #000000, $alpha: .3);
+            }
+    
+    
+            &::before {
+                opacity: .9;
+                background: linear-gradient(90deg, #002EFF 36.8%, rgba(0, 46, 255, 0) 92.19%);
+                
+            }
+
+            .container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                .text {
+                    text-align: center;
+                }
+
+                .actions {
+                    justify-content: center;
+                }
+            }
+        }
+
+        .s-faq {
+            .container {
+                justify-content: center;
+
+            }
+
+            .text {
+                text-align: center;
+                margin-bottom: 4rem;
+            }
+        }
+    }
+
+}
+
+@media(max-width: 720px) {
+    main {
+        .s-hero-each-service {
+            margin-top: 8rem;
+            background-size: cover;
+            background-position-x: 70%;
+            height: 37rem;
+    
+            &::before {
+                background: linear-gradient(90deg, #002eff 39.8%, rgba(0, 46, 255, 0) 93.19%);
+            }
+            
+            .container {
+
+
+                
+    
+                .text {
+                    h1 {
+                        font-size: 3rem;
+                        line-height: 3.8rem;
+                    }
+                }
+                
+            }
+        }
+
+        .s-info-service {
+    
+            .info-solar-page {
+    
+                h2 {
+                    margin-bottom: 3rem;
+                }
+            }
+        }
+
+        .s-info-service {
+            margin-top: 3.5rem;
+            
+            .container {
+                row-gap: 4.9rem;
+                .services-nav {
+                    margin-bottom: 0rem;
+                }
+            }
+        }
+
+        .s-watch-videos {
+            margin-top: 5rem;
+            margin-bottom: 5rem;
+            h2 {
+                font-size: 2.6rem;
+                line-height: 3.3rem;
+                margin-bottom: 2.7rem;
+            }
+
+            .videos {
+                margin-bottom: 3.5rem;
+                row-gap: 1.6rem;
+            }
+        }
+
+        .s-hero-about-service {
+            margin-top: 7rem;
+            background-size: cover;
+            background-position-x: 70%;
+            height: 39.2rem;
+    
+            &::before {
+                background: linear-gradient(90deg, #002eff 39.8%, rgba(0, 46, 255, 0) 93.19%);
+            }
+
+            .text {
+                max-width: 25rem;
+                h2 {
+                    font-size: 2.6rem;
+                    line-height: 3.3rem;  
+                    margin-bottom: 1.8rem;
+                }
+
+                p {
+                    font-size: 1.46rem;
+                    line-height: 2.2rem;
+                }
+            }
+
+        }
+
+
+        .s-faq {
+            margin-bottom: 6rem;
+            .text {
+                margin-bottom: 2.8rem;
+                h2 {
+                    font-size: 2.6rem;
+                    line-height: 3.3rem;
+                }
+
+                p {
+                    font-size: 1.46rem;
+                    line-height: 2.2rem;
+                }
+            }
+
+            .accordion {
+                ul {
+                    .accordion-item {
+                        &.active {
+                            .accordion-content {
+                                padding: 2.4rem 5.4rem 2.4rem 2.9rem;
+                            }
+                        }
+                        .accordion-header {
+                            padding: 1.9rem 3.3rem;
+                            h4 {
+                                font-size: 1.6rem;
+                                line-height: 2rem;
+                                max-width: 100%;
+                                width: 100%;
+                            }
+
+                            .arrow-down {
+                                width: 2rem;
+                                height: 2rem;
+
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                }
+        
+                                margin-left: 1.2rem;
+                            }
+                        }
+
+                        .accordion-content {
+                            p {
+                                font-size: 1.46rem;
+                                line-height: 2.2rem;
+                            }
+                        }
+
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 670px) {
+
+    main {
+        .s-hero-each-service {
+            &.energy-management {
+                background-position: 82%;
+            }
+        }
+        
+        .s-info-service {
+            margin-bottom: 7rem;
+            .services-nav {
+
+                .content {
+                    h3 {
+                        font-size: 2.5rem;
+                        line-height: 3.2rem;
+                    }
+        
+                    ul {
+                        li {
+                            a {
+                                span {
+                                    font-size: 1.7rem;
+                                    line-height: 2.5rem;
+                                }
+                            }
+                        }
+                    }
+                }
+                
+            }
+
+            .info-solar-page {
+                text-align: left;
+                h2 {
+                    font-size: 26px;
+                    line-height: 33px;
+                }
+
+                p {
+                    font-size: 1.5rem;
+                    line-height: 2.6rem;
+
+                
+                }
+            }
+        }
+
+        .s-geral-solar-energy {
+            
+            &.solar-energy-page {
+                padding-bottom: 6rem;
+                .solar-energy-02 {
+                    padding-bottom: 0;
+                }
+
+                .solar-02 {
+                    padding-top: 0;
+                }
+
+                .investir-energia-solar {
+                    text-align: left;
+                    .text {
+                        h3 {
+                            font-size: 2.6rem;
+                            line-height: 3.3rem;
+                            margin-bottom: 3rem;
+                        }
+
+                        p {
+                            font-size: 1.5rem;
+                            line-height: 2.6rem;
+                        }
+
+                    
+                    }
+
+                    .image {
+                        margin-bottom: 3rem;
+                        max-width: 80%;
+                    }
+                    
+                }
+            }
+           
+        }
+
+        .s-watch-videos {
+            .videos {
+
+                .video {
+                    width: 100%;
+
+                    .icon-play {
+                        max-width: 4.7rem;
+                        height: 4.7rem;
+                        img {
+                            left: 1.5rem;
+                            max-width: 2.1rem;
+                        }
+                    }
+                }
+            }
+        }
+        
+        
+    }
+   
+}
+
+@media(max-width: 550px) {
+    main {
+        .s-info-service {
+        
+
+            .services-nav {
+                max-width: 100%;
+            }
+    
+           
+        }
+
+        .s-geral-solar-energy {
+            
+            &.solar-energy-page {
+
+
+                .investir-energia-solar {
+
+
+                    .image {
+                        max-width: 100%;
+                    }
+                    
+                }
+            }
+           
+        }
+    }
+}

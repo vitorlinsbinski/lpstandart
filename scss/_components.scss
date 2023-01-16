@@ -1,0 +1,433 @@
+.card-about {
+    width: 100%;
+    max-width: 19rem;
+    height: 19rem;
+    transition: all .3s ease-out;
+
+    &:hover {
+        background-color: $light-blue-03;
+        filter: drop-shadow(0px 4px 90px rgba(0, 0, 0, 0.13));
+    }
+
+    @include flex(row, center, center);
+
+    .content {
+        @include flex(column, center, center);
+        width: 100%;
+        max-width: 12.6rem;
+        .icon {
+            width: 100%;
+            max-width: 4.7rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .info-card {
+            p {
+                font-weight: 400;
+                font-size: 1.8rem;
+                line-height: 2.2rem;
+                text-align: center;
+                color: $text-color;
+                
+            }
+        }
+    }
+
+
+}
+
+.about-solar-panel {
+    width: 100%;
+    max-width: 59rem;
+    height: 20rem;
+    background-color: $light-blue-04;
+    padding: 5rem 4rem;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.08);
+
+    @include flex(row, center, space-between);
+
+    .icon {
+        @include flex(column, center, center);
+        padding-right: 5.2rem;
+        border-right: 1px solid rgba(0, 0, 0, 0.1);
+        margin-right: 5.2rem;
+
+        img {
+            width: 100%;
+            max-width: 4.9rem;
+            margin-bottom: 1.4rem;
+        }
+
+        h3 {
+            font-weight: 600;
+            font-size: 1.8rem;
+            line-height: 2.3rem;
+            text-align: center;
+            color: $brand-dark-blue;
+        }
+    }
+
+    .info {
+        p {
+            font-weight: 400;
+            font-size: 1.7rem;
+            line-height: 2.5rem;
+            opacity: .8;
+        }
+    }
+}
+
+.tag-section {
+    display: inline-block;
+    line-height: 2.6rem;
+    padding: 0 1.9rem;
+    background-color: $brand-normal-blue;
+    box-shadow: 0px 4px 30px rgba(0, 46, 255, 0.3);
+    border-radius: 3rem;
+    font-family: 'Sora';
+    font-weight: 400;
+    font-size: 1.3rem;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+}
+
+.card-worries {
+    width: 15.2rem;
+    height: 13.8rem;
+    background-color: rgba($color: #ffffff, $alpha: .6);
+    @include flex(column, center, center);
+
+    .icon {
+        margin-bottom: .65rem;
+    }
+
+    .text {
+        width: 100%;
+        max-width: 8.5rem;
+
+        p {
+            font-weight: 600;
+            font-size: 1.2rem;
+            line-height: 1.7rem;
+            text-align: center; 
+            opacity: 1;
+            color: #000000;
+        }
+    }
+}
+
+.card-service {
+    width: 39rem;
+    height: 62.9rem;
+
+    .image {
+        width: 100%;
+        max-width: 41.6rem;
+        height: 28.9rem;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .info {
+        background-color: $gray-01;
+        width: 100%;
+        height: 34rem;
+        padding-left: 4.2rem;
+        padding-top: 3.4rem;
+        position: relative;
+
+        .text {
+            width: 100%;
+            max-width: 28rem;
+            h4 {
+                font-family: 'Sora';
+                font-weight: 700;
+                font-size: 2.6rem;
+                line-height: 3.3rem;
+                color: $brand-dark-blue;
+                margin-bottom: 1.6rem;
+            }
+    
+            p {
+                font-weight: 400;
+                font-size: 1.7rem;
+                line-height: 2.4rem;  
+                color: $text-color;          
+                opacity: 0.7;
+            }
+        }
+
+        .btn {
+            position: absolute;
+            bottom: 4rem;
+        }
+       
+    }
+}
+
+.card-project {
+    width: 38rem;
+    height: 38rem;
+
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    transition: all .3s ease;
+
+    .image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &:hover {
+        filter: drop-shadow(0px 4px 90px rgba(0, 0, 0, 0.13));
+
+        &::before {
+            opacity: 1;
+        }
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        opacity: 0;
+        background: linear-gradient(0deg, rgba(0, 22, 128, 0.6) 0%, rgba(0, 22, 128, 0) 69.98%);
+        transition: all .3s;
+    }
+
+
+    .tags {
+        position: absolute;
+        top: 2.6rem;
+        left: 2.1rem;
+        width: 100%;
+        max-width: 35rem;
+
+        .tag-section {
+            margin-bottom: 1.2rem;
+            &:not(:last-child) {
+                margin-right: 1rem;
+            }
+        }
+    }
+
+    .btn {
+        position: absolute;
+        bottom: 1.8rem;
+        left: 2.1rem;
+    }
+}
+
+.depoimento-video {
+    width: 33.6rem;
+    height: 35rem;
+
+    transition: all .3s ease;
+    position: relative;
+    cursor: pointer;
+
+    .image {
+        width: 100%;
+        height: 100%;
+        
+        position: absolute;
+        z-index: 0;
+
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &:hover {
+        box-shadow: 0px 4px 30px 5px rgba(0, 0, 0, 0.22);
+
+        &::before {
+            opacity: .5;
+        }
+
+        .icon-play {
+            img {
+                transform: scale(1.06)
+            }
+        }
+    }
+
+    @include flex(row, center, center);
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        opacity: .2;
+        background-color: #001680;
+        transition: all .3s;
+        z-index: 2;
+    }
+
+    .icon-play {
+        z-index: 3;
+        width: 6rem;
+        height: 6rem;
+        background-color: white;
+        border-radius: 50%;
+        position: relative;
+        box-shadow: 0px 4px 11px 4px rgba(0, 0, 0, 0.25);
+
+        @include flex(row, center, center);
+
+        img {
+            position: absolute;
+            left: 2.1rem;
+            transition: all .3s ease-in-out;
+        }
+    }
+}
+
+.card-depoimento {
+    width: 60rem;
+    height: 25.4rem;
+    background-color: $gray-01;
+    padding-top: 3.8rem;
+    padding-left: 2.8rem;
+
+    .name {
+        padding-bottom: 2.6rem;
+        width: 100%;
+        max-width: 54rem;
+        border-bottom: 1px solid rgba($color: #000000, $alpha: .1);
+        margin-bottom: 1.3rem;
+        p {
+            font-family: 'Sora';
+            font-weight: 600;
+            font-size: 2.2rem;
+            line-height: 2.8rem;
+            color: $brand-normal-blue;
+            margin-bottom: .3rem;
+        }
+
+        span {
+            display: inline-block;
+            font-weight: 400;
+            font-size: 1.6rem;
+            line-height: 2rem;
+            color: $brand-dark-blue;
+            opacity: .9;
+        }
+    }
+
+    .report {
+        width: 100%;
+        max-width: 55rem;
+        @include flex(row, flex-start, space-between);
+        span {
+            display: inline-block;
+            font-style: italic;
+            font-weight: 700;
+            font-size: 5rem;
+            color: $brand-normal-blue;
+            margin-right: 2.5rem;
+        }
+
+        p {
+            font-style: italic;
+            font-weight: 400;
+            font-size: 1.8rem;
+            line-height: 2.5rem;
+            color: $text-color;
+            opacity: 0.7;
+            margin-top: 1.3rem;
+        }
+    }
+}
+
+.icon-play {
+    width: 6.3rem;
+    height: 6.3rem;
+    background-color: white;
+    border-radius: 50%;
+    @include flex(row, center, center);
+    z-index: 2;
+    position: relative;
+    transform: scale(1);
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    transition: all .3s;
+    img {
+        left: 2.2rem;
+        position: absolute;
+    }
+
+    &:hover {
+        background-color: #e1e1e1;
+    }
+}
+
+
+@media(max-width: 650px) {
+    .card-service {
+        width: 41.6rem;
+        height: 62.9rem;
+    
+        .image {
+            width: 100%;
+            max-width: 41.6rem;
+            height: 28.9rem;
+    
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    
+        .info {
+            background-color: $gray-01;
+            width: 100%;
+            height: 34rem;
+            padding-left: 4.2rem;
+            padding-top: 3.4rem;
+            position: relative;
+    
+            .text {
+                width: 100%;
+                max-width: 28rem;
+                h4 {
+                    font-family: 'Sora';
+                    font-weight: 700;
+                    font-size: 2.6rem;
+                    line-height: 3.3rem;
+                    color: $brand-dark-blue;
+                    margin-bottom: 1.6rem;
+                }
+        
+                p {
+                    font-weight: 400;
+                    font-size: 1.7rem;
+                    line-height: 2.4rem;  
+                    color: $text-color;          
+                    opacity: 0.7;
+                }
+            }
+    
+            .btn {
+                position: absolute;
+                bottom: 4rem;
+            }
+           
+        }
+    }
+}

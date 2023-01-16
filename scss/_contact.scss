@@ -1,0 +1,113 @@
+.s-hero-contact {
+    width: 100%;
+    height: 35rem;
+    margin-top: 10.5rem;
+    position: relative;
+
+    background-image: url('../imgs/orcamento-cover-page.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    z-index: 5;
+
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 8rem;
+
+    
+
+    .text {
+        margin-bottom: 2.5rem;
+    }
+    
+
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: linear-gradient(90deg, #002EFF 21.8%, rgba(0, 46, 255, 0) 43.19%); 
+        z-index: -1;
+    }
+}
+
+
+@media(max-width: 1180px) {
+    .s-hero-contact {
+        &::after {
+            position: absolute;
+            content: '';
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            background-color: rgba($color: #000000, $alpha: .2);
+        }
+
+
+        &::before {
+            opacity: .6;
+        }
+    }
+
+
+}
+
+@media(max-width: 720px) {
+    .s-hero-contact {
+        margin-top: 8rem;
+        background-size: cover;
+        background-position-x: 30%;
+
+        &::before {
+            background: linear-gradient(90deg, #002eff 39.8%, rgba(0, 46, 255, 0) 93.19%);
+        }
+        
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .text {
+                text-align: center;
+                max-width: 85%;
+                
+                h1 {
+                    font-size: 3rem;
+                    line-height: 3.8rem;
+                }
+            }
+            
+        }
+    }
+    .s-brands {
+        &.services-page {
+            margin: 6rem 0 7rem 0;
+        }
+    }
+
+    .s-all-projects {
+        margin-bottom: 6.5rem;
+       
+    }
+
+}
+
+@media(max-width: 420px) {
+    .s-hero-projects {
+        .container {
+            .text {
+                h1 {
+                    font-size: 3rem;
+                    line-height: 3.8rem;
+                }
+            }
+        }
+    }
+    
+}

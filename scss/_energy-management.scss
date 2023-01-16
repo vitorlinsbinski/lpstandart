@@ -1,0 +1,36 @@
+main {
+
+    .s-info-service {
+        
+        &.gestao-energia {
+            margin-bottom: 7rem;
+        }
+    }
+
+    .s-benefits-gestao-de-energia {
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+    }
+    
+}
+
+@media(max-width: 1350px) {
+    main {
+        .s-benefits-gestao-de-energia {
+            .container {
+                flex-direction: column;
+                
+                .about-solar-panel {
+                    &:not(:last-child) {
+                        margin-bottom: 3rem;
+                    }
+                }
+
+            }
+        }
+    }
+}

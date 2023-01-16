@@ -1,0 +1,93 @@
+button {
+    display: inline-block;
+}
+
+.btn {
+
+    padding: 0 2.1rem;
+    font-size: 1.5rem;
+    font-family: 'Sora', sans-serif;
+    font-weight: 600;
+
+    &.btn-primary {
+        background-color: $brand-dark-blue;
+        color: white;
+        transition: all .3s;
+        border: none;
+        line-height: 4.9rem;
+
+        &:hover {
+            background-color: $brand-normal-blue;
+        }
+
+        &.btn-white {
+            background-color: white;
+            color: $brand-dark-blue;
+
+            &:hover {
+                background-color: #c2c2c2;
+            }
+
+        }
+
+
+
+
+
+
+    }
+
+    &.btn-secondary {
+        line-height: 4.7rem;
+        border: 1px solid $brand-dark-blue;
+        color: $brand-dark-blue;
+        transition: all .3s;
+
+        &:hover {
+            border-color: $brand-normal-blue;
+            color: $brand-normal-blue;
+
+            &.btn-blue {
+
+                color: $brand-normal-blue;
+            }
+        }
+
+        &.btn-white {
+            border-color: white;
+            color: white;
+
+            &:hover {
+                border-color: #c2c2c2;
+                color: #c2c2c2;
+             }
+        }
+
+        &.btn-blue {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: $brand-dark-blue;
+
+            span {
+                margin-left: 1.2rem;
+            }
+        }
+
+
+
+        
+
+    }
+    
+}
+
+@media(max-width: 720px) {
+    .btn {
+        padding: 0 2rem;
+        font-size: 1.5rem;
+
+    }
+
+
+}

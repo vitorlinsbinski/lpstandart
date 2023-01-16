@@ -1,0 +1,268 @@
+.s-hero-services {
+    width: 100%;
+    height: 35rem;
+    margin-top: 10.5rem;
+    position: relative;
+
+    background-image: url('../imgs/services-hero-banner.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    z-index: 5;
+
+    display: flex;
+    align-items: center;
+
+    .text {
+        margin-bottom: 2.5rem;
+    }
+    
+
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: linear-gradient(90deg, #002EFF 21.8%, rgba(0, 46, 255, 0) 43.19%); 
+        z-index: -1;
+    }
+}
+
+.s-brands {
+    &.services-page {
+        margin: 10rem 0 10rem 0;
+    }
+}
+
+.s-all-services {
+    &.page-services {
+        margin-bottom: 13rem;
+        .title {
+            text-align: center;
+            h2 {
+                color: $brand-dark-blue;
+                margin-bottom: 2.5rem;
+            }
+            margin-bottom: 5.5rem;
+        }
+    
+        .services-cards {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            row-gap: 2.2rem;
+            column-gap: 2.2rem;
+        }
+    
+        .another-services {
+            margin-top: 7rem;
+            text-align: center;
+    
+            h2 {
+                margin-bottom: 4rem;
+            }
+    
+            ul {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;
+                row-gap: 4rem;
+                
+                li {
+                    &:not(:last-child) {
+                        padding-right: 3.4rem;
+                        border-right: 1px solid rgba($color: #000000, $alpha: .1);
+                    }
+    
+                    &:not(:first-child) {
+                        margin-left: 3.4rem;
+                    }
+    
+                    font-weight: 400;
+                    font-size: 1.8rem;
+                    line-height: 2.2rem;
+                    
+                    
+                    color: $text-color;
+                    
+                    opacity: 0.7;
+                }
+            }
+        }
+    }
+   
+}
+
+@media(max-width: 1180px) {
+    .s-hero-services {
+        &::after {
+            position: absolute;
+            content: '';
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            background-color: rgba($color: #000000, $alpha: .2);
+        }
+
+
+        &::before {
+            opacity: .6;
+        }
+    }
+}
+
+@media(max-width: 720px) {
+    .s-hero-services {
+        margin-top: 8rem;
+        background-size: cover;
+
+        &::before {
+            background: linear-gradient(90deg, #002eff 39.8%, rgba(0, 46, 255, 0) 93.19%);
+        }
+        
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .text {
+                text-align: center;
+                max-width: 85%;
+
+
+
+                
+            }
+            
+        }
+    }
+    .s-brands {
+        &.services-page {
+            margin: 6rem 0 7rem 0;
+        }
+    }
+
+    .s-all-services {
+        &.page-services {
+            margin-bottom: 6.5rem;
+       
+            .title {
+                margin-bottom: 4rem;
+                h2 {
+                    font-size: 2.6rem;
+                    line-height: 3.3rem;
+                    margin-bottom: 2.4rem;
+                }
+            }
+    
+            .another-services {
+                margin-top: 4rem;
+    
+                h2 {
+                    font-size: 2.6rem;
+                    line-height: 3.3rem;
+                }
+    
+            }
+        }
+        
+    }
+}
+
+@media(max-width: 560px) {
+    .s-all-services {
+        &.page-services {
+            .another-services {
+                h2 {
+                    margin-bottom: 3.2rem;
+                }
+                ul {
+                    column-gap: 3rem;
+                    li {
+                        font-size: 1.46rem;
+                        line-height: 2.2rem;
+                        
+                        
+    
+                        &:not(:last-child) {
+                            padding-right: 0;
+                            border-right: none;
+                        }
+        
+                        &:not(:first-child) {
+                            margin-left: 0;
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+}
+
+@media(max-width: 420px) {
+    .s-hero-services {
+        .container {
+            .text {
+                h1 {
+                    font-size: 3rem;
+                    line-height: 3.8rem;
+                }
+            }
+        }
+    }
+    .s-all-services {
+        &.page-services {
+            .services-cards {
+                .card-service {
+                    width: 100%;
+                    height: 100%;
+    
+                    .image {
+                        max-width: 100%;
+                        height: 23.3rem;
+                    }
+    
+                    .info {
+                        height: 30rem;
+                        padding: 0;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        
+    
+                        .text {
+                            text-align: center;
+                            width: 100%;
+                            max-width: 26.1rem;
+                            margin-top: 3.2rem;
+    
+                            h4 {
+                                font-size: 1.8rem;
+                                line-height: 2.3rem;
+                            }
+    
+                            p {
+                                font-size: 1.46rem;
+                                line-height: 2.2rem;
+                            }
+                        }
+    
+                        .btn {
+                            max-width: 26.1rem;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+}

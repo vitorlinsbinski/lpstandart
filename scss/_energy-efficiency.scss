@@ -1,0 +1,23 @@
+main {
+    .s-hero-each-service {
+        &.energy-efficiency {
+            .container {
+                .text {
+                    width: 100%;
+                    max-width: 52.8rem;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 650px) {
+    main {
+        .s-hero-each-service {
+            &.energy-efficiency {
+                background-position: 30%;
+            }
+        }
+    }
+
+}

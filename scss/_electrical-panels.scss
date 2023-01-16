@@ -1,0 +1,46 @@
+main {
+    .s-hero-each-service {
+        &.electrical-panels {
+            .text {
+                width: 100%;
+                max-width: 56rem;
+            }
+        }
+    }
+
+    .s-electrical-panels-images {
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+
+            gap: 2.8rem;
+        }
+    }
+}
+
+@media(max-width: 650px) {
+    main {
+        .s-hero-each-service {
+            &.electrical-panels {
+                background-position: 70%;
+            }
+        }
+    }
+
+}
+
+@media(max-width: 540px) {
+    .s-info-service {
+        &.electrical-panels {
+            margin-bottom: 4rem;
+        }
+    }
+
+    .-shero-about-service {
+        &.electrical-panels {
+            margin-top: 6rem;
+        }
+    }
+}
