@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre a Standart</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/plugins.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="shortcut icon" href="./imgs/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="left-side">
+                <div class="logo">
+                    <a href="../index.html"><img src="./imgs/logo.svg" alt="logo-Standart"></a>
+                </div>
+                
+                <nav>
+                    <div class="dropdown js-dropdown">
+                        <div class="services-items">
+                            <a href="../energiasolar.html" class="item"><span>energia solar</span></a>
+                            <a href="../gestaodeenergia.html" class="item"><span>gestão de energia</span> </a>
+                            <a href="../analisedeeficienciaenergetica.html" class="item"><span>análise de eficiência energética</span> </a>
+                            <a href="../bancodecapacitores.html" class="item"><span>banco de capacitores</span></a>
+                            <a href="../montagememanutencaodequadroseletricos.html" class="item"><span>montagem e manutenção de quadros elétricos</span> </a>
+                            <a href="../projetoseletricos.html" class="item"><span>projetos elétricos</span> </a>
+                            <a href="../services.html" class="item"><span>ver mais</span> </a>
+
+                        
+                           
+                        </div>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="./index.html" class="js-menu-item">Home</a>
+                        </li>
+                        <li>
+                            <a href="../about.html" class="js-menu-item">Sobre</a>
+                        </li>
+                        <li>
+                            <a href="" class="js-menu-item js-service-menu-item active"><span class="active">Serviços</span><div class="image"><img src="./imgs/icon-arrow.svg" alt="seta para baixo"></div></a>
+                        </li>
+                        <li>
+                            <a href="../projects.html" class="js-menu-item">Projetos</a>
+                        </li>
+                        <!-- <li>
+                            <a href="">Contato</a>
+                        </li> -->
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="right-side">
+                <ul class="icons-social-media">
+                    <li><a href="https://www.instagram.com/standarteng/" class="social-media" target="_blank"><img src="./imgs/icon-instagram.svg" alt="Ícone do Instagram"></a></li>
+                    
+                    <li><a href="https://www.facebook.com/standarteng" class="social-media" target="_blank"><img src="./imgs/icon-facebook.svg" alt="Ícone do Facebook"></a></li>
+
+                    <li><a href="mailto:contato@standart.eng.br?" class="social-media" target="_blank"><img src="./imgs/icon-mail.svg" alt="Ícone de email"></a></li>
+
+                    <li><a href="tel:66999970463" class="social-media"><img src="./imgs/icon-phone.svg" alt="Ícone de telefone"></a></li>
+                    
+                </ul>
+
+                <a href="#section-contato">
+                    <button class="btn btn-primary" id="js-redirect-to-form">Fazer orçamento</button>
+                </a>
+
+
+            </div>
+
+            <a href="" class="btn-hamburger">
+                <div class="trace"></div>
+            </a>
+
+
+        </div>
+
+    </header>
+
+    
+    <div class="menu-mobile">
+       
+        <div class="content">
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../about.html">Sobre</a></li>
+                    <li class="service-item">
+                        <div class="accordion-item" id="js-accordion-item">
+                            <div class="accordion-header" id="js-accordion-header">
+                                <span>Serviços</span><div class="arrow-down-service"><img src="./imgs/arrow-down-blue.svg" alt="Seta para baixo"></div>
+                            </div>
+
+                            <div class="accordion-content" id="js-accordion-content">
+                                <a href="../energiasolar.html">energia solar</a>
+                                <a href="../gestaodeenergia.html">gestão de energia</a>
+                                <a href="../analisedeeficienciaenergetica.html">análise de eficiência energética </a>
+                                <a href="../bancodecapacitores.html">banco de capacitores</a>
+                                <a href="../montagememanutencaodequadroseletricos.html">montagem e manutenção de quadros elétricos</a>
+                                <a href="../projetoseletricos.html">projetos e instalações elétricas</a>
+                                <a href="../services.html">ver mais</a>
+                                
+                            </div>
+                        </div>
+
+
+                        
+                    </li>
+                    <li><a href="../projects.html">Projetos</a></li>
+                </ul>
+
+            </nav>
+
+            <ul class="icons-social-media">
+                <li><a href="https://www.instagram.com/standarteng/" class="social-media" target="_blank"><img src="./imgs/icon-instagram.svg" alt="Ícone do Instagram"></a></li>
+                
+                <li><a href="https://www.facebook.com/standarteng" class="social-media" target="_blank"><img src="./imgs/icon-facebook.svg" alt="Ícone do Facebook"></a></li>
+
+                <li><a href="mailto:contato@standat.eng.br?" class="social-media" target="_blank"><img src="./imgs/icon-mail.svg" alt="Ícone de email"></a></li>
+
+                <li><a href="tel:66999970463" class="social-media"><img src="./imgs/icon-phone.svg" alt="Ícone de telefone"></a></li>
+                
+            </ul>
+
+            <a href="../contact.html" target="_blank"><button class="btn btn-primary">Fazer orçamento</button></a>
+
+
+        </div>
+        
+        <div class="btn-menu-container">
+            <a href="" class="btn-hamburger">
+                <div class="trace"></div>
+            </a>
+        </div>
+
+    </div>
+
+
+    <main class="main-solar-energy-page">
+        <section class="s-hero-each-service solar-energy" data-aos="fade-zoom-in">
+            <div class="container">
+                <div class="tag-section" data-aos="flip-left">serviços</div>
+                
+                <div class="text" data-aos="fade-right">
+                    <h1>Energia solar</h1>
+                </div>
+
+
+                <div class="actions" data-aos="fade-right">
+                    <a href="#section-contato">
+                        <button class="btn btn-primary btn-white" id="js-redirect-to-form">
+                            Fazer orçamento
+                        </button>
+                    </a>
+
+                    
+                </div>
+            </div>
+
+       </section>
+
+       <section class="s-info-service">
+            <div class="container">
+                <div class="services-nav" data-aos="flip-left">
+                    <div class="content">
+                        <h3 data-aos="fade-right">Serviços</h3>
+                        <nav>
+                            <ul>
+                                <li data-aos="fade-up"><a href=""><span class="active">Energia Solar</span><img src="./imgs/arrow-up-right.svg" alt="Seta para direita"></a></li>
+                                <li data-aos="fade-up"><a href=""><span>Gestão de energia</span><img src="./imgs/arrow-up-right.svg" alt="Seta para direita"></a></li>
+                                <li data-aos="fade-up"><a href=""><span>Análise de eficiência energética</span><img src="./imgs/arrow-up-right.svg" alt="Seta para direita"></a></li>
+                                <li data-aos="fade-up"><a href=""><span>Banco de capacitores</span><img src="./imgs/arrow-up-right.svg" alt="Seta para direita"></a></li>
+                                <li data-aos="fade-up"><a href=""><span>Montagem e manutenção de quadros elétricos</span><img src="./imgs/arrow-up-right.svg" alt="Seta para direita"></a></li>
+                                <li data-aos="fade-up"><a href=""><span>Projeto e instalações elétricas</span><img src="./imgs/arrow-up-right.svg" alt="Seta para direita"></a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    
+                </div>
+
+                <div class="info-solar-page" data-aos="fade-left">
+                    <h2>Procurando por uma empresa para sistema de energia solar fotovoltaica?</h2>
+                    
+                    <p>Quem busca por painel de energia solar pode ter uma certeza: essa instalação <strong>gera economia de até 95%</strong> na fatura do final do mês. Todo o valor economizado pode ser aplicado ou convertido em benfeitorias para a empresa.</p>
+
+                    <p>Mas os benefícios financeiros não param por aí. Outro fator econômico é a longo prazo: além da <strong>necessidade mínima de manutenção</strong>, a vida útil dos painéis solares é superior a 25 anos. E o melhor: <strong>o investimento se paga em menos de 10 anos!</strong></p>
+
+                    <p>Tudo isso é <strong>pensado de forma personalizada</strong> para que cada cliente tenha a solução que precisa e busca, criando assim um <strong>ambiente sustentável e seguro</strong> para todas as empresas, indústrias e residências.</p>
+                </div>
+            </div>
+            
+       </section>
+
+       <section class="s-geral-solar-energy solar-energy-page" id="section-energia-solar">
+            <div class="solar-energy-02">
+                <div class="container">
+                        
+                    <div class="solar-02">
+
+
+                        <div class="solar-benefits">
+                            <div class="benefits">
+                                <h2 data-aos="fade-right">Estamos falando de um recurso:</h2>
+                                <div class="about-solar-panel" data-aos="fade-up">
+                                    <div class="icon">
+                                        <img src="./imgs/icon-economic.svg" alt="Ícone de saco de dinheiro">
+                                        <h3>Econômico</h3>
+                                    </div>
+                    
+                                    <div class="info">
+                                        <p>Os sistemas fotovoltaicos exigem um baixo custo de manutenção, trazendo alta durabilidade ao sistema, que, aliado aos cuidados necessários, podem durar mais de 25 anos.</p>
+                                    </div>
+                                </div>
+
+                                <div class="about-solar-panel" data-aos="fade-up">
+                                    <div class="icon">
+                                        <img src="./imgs/icon-sustentavel.svg" alt="Ícone de uma folha">
+                                        <h3>Sustentável</h3>
+                                    </div>
+                    
+                                    <div class="info">
+                                        <p>Sem emissão de gases poluentes ao meio ambiente, a Energia Solar é considerada uma alternativa ecologicamente correta.</p>
+                                    </div>
+                                </div>
+
+                                <div class="about-solar-panel" data-aos="fade-up">
+                                    <div class="icon">
+                                        <img src="./imgs/icon-engrenagem.svg" alt="Ícone de engrenagem">
+                                        <h3>Baixa manutenção</h3>
+                                    </div>
+                    
+                                    <div class="info">
+                                        <p>Os sistemas fotovoltaicos exigem um baixo custo de manutenção, trazendo alta durabilidade ao sistema, que, aliado aos cuidados necessários, podem durar mais de 25 anos.</p>
+                                    </div>
+                                </div>
+
+                                <div class="about-solar-panel" data-aos="fade-up">
+                                    <div class="icon">
+                                        <img src="./imgs/icon-instalacao.svg" alt="Ícone de instalação">
+                                        <h3>Fácil instalação</h3>
+                                    </div>
+                    
+                                    <div class="info">
+                                        <p>Zero dores de cabeça na instalação. A Energia Solar se destaca pela praticidade, exigindo menos manutenção e evitando desperdícios.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="image" data-aos="fade-left">
+                                <img src="./imgs/image-solar-section-02.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="investir-energia-solar">
+                    <div class="text" data-aos="fade-right">
+                        <h3>Investir em energia solar é também agregar valor!</h3>
+
+                        <p>Investir em painel de energia solar para o seu negócio também agrega valor para a sua marca, que pode se apresentar como uma empresa que busca soluções sustentáveis para operar.</p>
+
+                        <p>A Standart é uma empresa com anos de experiência no mercado da engenharia elétrica, que preza por maior eficiência para entregar as melhores soluções energéticas para os seus clientes.</p>
+                    </div>
+
+                    <div class="image" data-aos="fade-left">
+                        <img src="./imgs/imagem-investir-energia-solar.png" alt="Imagem de profissionais montando placas solares">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="s-watch-videos energia-solar">
+
+            <section class="s-video-popup" id="js-video-popup-solar">
+                <div class="overlay">
+
+                </div>
+
+                <div class="video-content">
+                    <div class="btn-close" id="js-close-video-solar">
+                        <img src="./imgs/icon-close.svg" alt="Ícone de X">
+                    </div>
+
+
+                    <iframe src="https://www.youtube.com/embed/FyhK_14U0W8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </section>
+
+            <section class="s-video-popup" id="js-video-popup-solar">
+                <div class="overlay">
+
+                </div>
+
+                <div class="video-content">
+                    <div class="btn-close" id="js-close-video-solar">
+                        <img src="./imgs/icon-close.svg" alt="Ícone de X">
+                    </div>
+
+
+                    <iframe src="https://www.youtube.com/embed/4Q-db6s6dNM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </section>
+
+
+            <div class="container">
+                <h2 data-aos="fade-right">Assista aos nossos vídeos</h2>
+
+                <div class="videos">
+                    <div class="video v-01" data-aos="zoom-in" id="js-video-solar">
+                        <div class="image">
+                            <img src="/imgs/video-01.png" alt="">
+                        </div>
+                        <div class="icon-play">
+                            <img src="./imgs/icon-play.svg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="video v-02" data-aos="zoom-in" id="js-video-solar">
+                        <div class="image">
+                            <img src="/imgs/video-02.png" alt="">
+                        </div>
+
+                        <div class="icon-play">
+                            <img src="./imgs/icon-play.svg" alt="">
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <a href="https://www.youtube.com/channel/UC09S9hcnOUWI5dFQZadEQ-w" target="_blank" data-aos="fade-up"><button class="btn btn-secondary btn-blue"><i class="fa-brands fa-youtube"></i><span>Ver canal no youtube</span></button></a>
+
+                
+            </div>
+
+            
+
+
+            
+
+        </section>
+
+        <section class="s-hero-about-service" data-aos="fade-zoom-in">
+            <div class="container">
+                
+                <div class="text" data-aos="fade-right">
+                    <h2>Gostou do nosso serviço?</h2>
+                    <p>Veja todos os nossos projetos já executados</p>
+                </div>
+
+
+                <div class="actions" data-aos="fade-right">
+                    <a href="../projects.html">
+                        <button class="btn btn-primary btn-white">
+                            Ver projetos
+                        </button>
+                    </a>
+
+                </div>
+            </div>
+
+       </section>
+
+       <section class="s-brands" data-aos="fade-up"
+       data-aos-anchor-placement="top-bottom">
+           <div class="container">
+               <ul>
+                   <li><img src="./imgs/weg_logo.svg" alt="Logo da WEG"></li>
+   
+                   <li><img src="./imgs/sungrow_logo.svg" alt="Logo da Sungrow"></li>
+   
+                   <li><img src="./imgs/growatt_logo.svg" alt="Logo da Growatt"></li>
+                   
+   
+                   <li><img src="./imgs/jinko_logo.svg" alt="Logo da Junko Solar"></li>
+   
+                   <li><img src="./imgs/trina_solar_logo.svg" alt="Logo da Trina Solar"></li>
+               </ul>
+           </div>     
+       </section>
+       
+       
+       <section class="s-depoimentos" id="section-depoimentos">
+
+        <section class="s-depoimentos-popup">
+            <div class="depoimento-video-popup js-depoimento-popup">
+                <div class="overlay">
+
+                </div>
+
+                <div class="video-content">
+                    <div class="btn-close js-close-video-solar">
+                        <img src="./imgs/icon-close.svg" alt="Ícone de X">
+                    </div>
+
+
+                    <iframe src="https://www.youtube.com/embed/NuJVPfcbWrc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="depoimento-video-popup js-depoimento-popup">
+                <div class="overlay">
+
+                </div>
+
+                <div class="video-content">
+                    <div class="btn-close js-close-depoimento">
+                        <img src="./imgs/icon-close.svg" alt="Ícone de X">
+                    </div>
+
+
+                    <iframe src="https://www.youtube.com/embed/nIxC1pCGcfg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="depoimento-video-popup js-depoimento-popup">
+                <div class="overlay">
+
+                </div>
+
+                <div class="video-content">
+                    <div class="btn-close js-close-depoimento">
+                        <img src="./imgs/icon-close.svg" alt="Ícone de X">
+                    </div>
+
+
+                    <iframe src="https://www.youtube.com/embed/NuJVPfcbWrc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+        <div class="container">
+            <div class="depoimentos-video">
+                
+                <div class="info-depoimento" data-aos="fade-right">
+                    <h2>Depoimentos de nossos clientes</h2>
+                    <p>Confira o que as pessoas estão achando dos nossos serviços prestados</p>
+                    <a href="#section-contato">
+                        <button class="btn btn-primary" id="js-redirect-to-form">Fazer orçamento</button>
+                    </a>
+
+                    
+                </div>
+                <div class="container" data-aos="fade-left">
+                    <div class="slide-depoimentos">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="depoimento-video">
+                                    <div class="image">
+                                        <img src="./imgs/depoimento-01.png" alt="">
+                                    </div>
+                                    
+                                    <div class="icon-play">
+                                        <img src="./imgs/icon-play.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="depoimento-video">
+                                    <div class="image">
+                                        <img src="./imgs/depoimento-02.png" alt="">
+                                    </div>
+
+                                    <div class="icon-play">
+                                        <img src="./imgs/icon-play.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="depoimento-video">
+                                    <div class="image">
+                                        <img src="./imgs/depoimento-03.png" alt="">
+                                    </div>
+
+                                    <div class="icon-play">
+                                        <img src="./imgs/icon-play.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="depoimento-video">
+                                    <div class="image">
+                                        <img src="./imgs/depoimento-03.png" alt="">
+                                    </div>
+
+                                    <div class="icon-play">
+                                        <img src="./imgs/icon-play.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="depoimento-video">
+                                    <div class="image">
+                                        <img src="./imgs/depoimento-03.png" alt="">
+                                    </div>
+
+                                    <div class="icon-play">
+                                        <img src="./imgs/icon-play.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="depoimento-video">
+                                    <div class="image">
+                                        <img src="./imgs/depoimento-03.png" alt="">
+                                    </div>
+
+                                    <div class="icon-play">
+                                        <img src="./imgs/icon-play.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            
+
+                            
+                        </div>
+
+                        <div class="swiper-button-prev"><img src="./imgs/arrow-left.svg" alt="Seta para esquerda"></div>
+
+                        <div class="swiper-button-next"><img src="./imgs/arrow-right.svg" alt="Seta para direita"></div>
+
+                        
+                        
+                    </div>
+                </div>
+
+
+            </div>
+
+
+            <div class="depoimentos-texto">
+                <div class="card-depoimento" data-aos="flip-down">
+                    <div class="name">
+                        <p>Zilda M.</p>
+                        <span>Empresária</span>
+                    </div>
+    
+                    <div class="report">
+                        <span>“</span>
+                        <p>Parabéns pela sua agilidade do processo. Tenho certeza que fizemos um bom investimento com uma empresa séria. Vou indicar para amigas aqui de Cuiabá"</p>
+                    </div>
+                </div>
+
+                <div class="card-depoimento" data-aos="flip-up">
+                    <div class="name">
+                        <p>Guilherme D.</p>
+                        <span>Empresário</span>
+                    </div>
+    
+                    <div class="report">
+                        <span>“</span>
+                        <p>O serviço de vocês foi muito bem executado, fizeram em um prazo muito curto”"</p>
+                    </div>
+                </div>
+            </div>
+
+            
+
+        </div>
+        </section>
+
+        
+        <section class="s-numbers">
+            <div class="container">
+                <div class="info-standart">
+                    <div class="card-numbers" data-aos="zoom-in"> 
+                        <h4>10</h4>
+                        <p>anos de experiência</p>
+                    </div>
+
+                    <div class="card-numbers" data-aos="zoom-in">
+                        <span>mais de</span>
+                        <h4>R$ 1 milhão</h4>
+                        <p>de economia gerada</p>
+                    </div>
+
+                    <div class="card-numbers" data-aos="zoom-in">
+                        <span>mais de</span>
+                        <h4>1MW</h4>
+                        <p>em projetos</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <section class="s-contato" id="section-contato">
+            <div class="container">
+                <div class="info-contact" >
+                    <h2 data-aos="fade-right">Faça seu orçamento!</h2>
+    
+                    <ul>    
+                        <div class="division d1">
+                            <li data-aos="fade-up"><img src="./imgs/icon-check-02.svg" alt="Ícone de verificação"><span>Orçamento sem compromisso</span></li>
+                        
+                            <li data-aos="fade-up"><img src="./imgs/icon-check-02.svg" alt="Ícone de verificação"><span>Respostas rápidas</span> </li>
+                        </div>
+
+                        <div class="division d2">
+                            <li data-aos="fade-up"><img src="./imgs/icon-check-02.svg" alt="Ícone de verificação"><span>Temos uma equipe pronta para lhe atender</span></li>
+    
+                            <li data-aos="fade-up"><img src="./imgs/icon-check-02.svg" alt="Ícone de verificação"><span>Soluções personalizadas para você</span></li>
+                        </div>
+
+                        <div class="division d3">
+
+                            <li data-aos="fade-up"><img src="./imgs/icon-check-02.svg" alt="Ícone de verificação"><span>Procuramos sempre o melhor custo-benefício</span></li>
+    
+                            <li data-aos="fade-up"><img src="./imgs/icon-check-02.svg" alt="Ícone de verificação"><span>Atendimento humanizado</span></li>
+                        </div>
+
+    
+                    </ul>
+                </div>
+    
+                <div class="form-area" data-aos="fade-left">
+                    <form action="./formulariosolar.php" method="POST" id="message-form" onsubmit="valida()">
+                        <div class="input-area">
+                            <label for="name">Nome:</label>
+                            <input type="text" name="nome" id="name" placeholder="Digite seu nome" required>
+                        </div>
+
+                        <div class="input-area">
+                            <label for="email">Email:</label>
+                            <input type="email" name="email" id="email" placeholder="Digite o seu email" required>
+                        </div>
+
+                        <div class="input-area">
+
+                            <label for="tel">Whatsapp:</label>
+                            <input type="tel" name="telefone" id="tel" placeholder="Digite seu telefone" required>
+                        </div>
+
+                        <div class="input-area">
+
+                            <label for="tel">Cidade:</label>
+                            <input type="text" name="cidade" id="tel" placeholder="Digite sua cidade" required>
+                        </div>
+
+                        <div class="input-area">
+                            <label for="estado">Estado:</label>
+
+                            <div class="select-area">
+                                <select name="estado" id="service" required>
+                                    <option value="" disabled selected class="select-an-option">Selecione um estado</option>
+                                    <option value="AC">Acre</option>
+                                    <option value="AL">Alagoas</option>
+                                    <option value="AP">Amapá</option>
+                                    <option value="AM">Amazonas</option>
+                                    <option value="BA">Bahia</option>
+                                    <option value="CE">Ceará</option>
+                                    <option value="DF">Distrito Federal</option>
+                                    <option value="ES">Espírito Santo</option>
+                                    <option value="GO">Goiás</option>
+                                    <option value="MA">Maranhão</option>
+                                    <option value="MT">Mato Grosso</option>
+                                    <option value="MS">Mato Grosso do Sul</option>
+                                    <option value="MG">Minas Gerais</option>
+                                    <option value="PA">Pará</option>
+                                    <option value="PB">Paraíba</option>
+                                    <option value="PR">Paraná</option>
+                                    <option value="PE">Pernambuco</option>
+                                    <option value="PI">Piauí</option>
+                                    <option value="RJ">Rio de Janeiro</option>
+                                    <option value="RN">Rio Grande do Norte</option>
+                                    <option value="RS">Rio Grande do Sul</option>
+                                    <option value="RO">Rondônia</option>
+                                    <option value="RR">Roraima</option>
+                                    <option value="SC">Santa Catarina</option>
+                                    <option value="SP">São Paulo</option>
+                                    <option value="SE">Sergipe</option>
+                                    <option value="TO">Tocantins</option>
+                                    
+                                </select>
+
+                                <div class="arrow-down">
+                                    <img src="./imgs/arrow-down.svg" alt="Seta para baixo">
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="input-area">
+                            <label for="tipo-de-local">Tipo de local:</label>
+
+                            <div class="select-area">
+                                <select name="tipo-de-local" id="service" required>
+                                    <option value="" disabled selected class="select-an-option">Selecione uma opção</option>
+                                    <option value="residencial">Residencial</option>
+                                    <option value="propriedade-rural">Propriedade Rural</option>
+                                    <option value="comercio">Comércio</option>
+                                    <option value="industria">Indústria</option>
+                                    
+                                    
+                                </select>
+
+                                <div class="arrow-down">
+                                    <img src="./imgs/arrow-down.svg" alt="Seta para baixo">
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="input-area">
+                            <label for="valor-medio-consumo-de-energia">Valor médio da conta de energia (R$):</label>
+                            <input type="number" name="valor-medio-consumo-de-energia" id="valor-medio-consumo-de-energia" placeholder="Digite o valor em R$" required>
+                        </div>
+
+                        <div class="input-area">
+                            <label for="consumo-energia-eletrica-kwh">Consumo médio da energia em KWh:</label>
+                            <input type="number" name="consumo-energia-eletrica-kwh" id="consumo-energia-eletrica-kwh" placeholder="Digite o consumo em KWh" required>
+                        </div>
+                        
+
+
+                        <div class="checkbox-permission">
+                           
+                            <p>Ao enviar seus dados, você nos autoriza a te enviar e-mails e mensagens via Whatsapp. Você pode cancelar a qualquer momento.</p>
+                        </div>
+
+                        <div class="g-recaptcha" data-sitekey="6LeHebkjAAAAAPSAYKdQf8rfa1WVOSgnB-fzfd40"></div>
+
+                        <div class="alertMessage">
+                            <p>Atenção! É necessário marcar a opção "Não sou um robô" para prosseguir com o envio.</p>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
+                </div>
+            </div>
+            
+        </section>
+
+        <section class="s-faq">
+            <div class="container">
+                <div class="text" data-aos="fade-right">
+                    <h2>Ficou com alguma dúvida?</h2>
+
+                    <p>Veja as principais perguntas que são feitas para a STANDART</p>
+                </div>
+
+                <div class="accordion">
+                    <ul>
+                        <li class="accordion-item" id="js-accordion-item" data-aos="fade-up">
+                            <div class="accordion-header" id="js-accordion-header">
+                                <h4>Como funciona o sistema de energia solar?</h4>
+
+                                <div class="arrow-down">
+                                    <img src="./imgs/icon-arrow-down.svg" alt="Ícone de seta para baixo">
+                                </div>
+                            </div>
+
+                            <div class="accordion-content" id="js-accordion-content">
+                                <p>O sistema de Energia Solar funciona a partir de um painel fotovoltaico e outros equipamentos que transformam a luz do sol em energia elétrica.</p>
+                            </div>
+                        </li>
+
+                        <li class="accordion-item" id="js-accordion-item" data-aos="fade-up">
+                            <div class="accordion-header" id="js-accordion-header">
+                                <h4>Em quais lugares posso ter energia solar?</h4>
+
+                                <div class="arrow-down">
+                                    <img src="./imgs/icon-arrow-down.svg" alt="Ícone de seta para baixo">
+                                </div>
+                            </div>
+
+                            <div class="accordion-content" id="js-accordion-content">
+                                <p>Você pode adquirir o recurso em qualquer local.  A Standart oferece serviços em Energia Elétrica para empresas, industrias e residências.</p>
+                            </div>
+                        </li>
+
+                        <li class="accordion-item" id="js-accordion-item" data-aos="fade-up">
+                            <div class="accordion-header" id="js-accordion-header">
+                                <h4>Como faço para instalar a Energia Solar?</h4>
+
+                                <div class="arrow-down">
+                                    <img src="./imgs/icon-arrow-down.svg" alt="Ícone de seta para baixo">
+                                </div>
+                            </div>
+
+                            <div class="accordion-content" id="js-accordion-content">
+                                <p>A Standart executa todo processo de instalação da sua Energia Solar. Cuidamos das etapas técnicas e burocráticas de todo o processo.</p>
+                            </div>
+                        </li>
+
+                        <li class="accordion-item" id="js-accordion-item" data-aos="fade-up">
+                            <div class="accordion-header" id="js-accordion-header">
+                                <h4>O sistema de Energia Solar faz barulho?</h4>
+
+                                <div class="arrow-down">
+                                    <img src="./imgs/icon-arrow-down.svg" alt="Ícone de seta para baixo">
+                                </div>
+                            </div>
+
+                            <div class="accordion-content" id="js-accordion-content">
+                                <p>Não. O sistema de Energia Solar é silencioso.</p>
+                            </div>
+                        </li>
+
+                        <li class="accordion-item" id="js-accordion-item" data-aos="fade-up">
+                            <div class="accordion-header" id="js-accordion-header">
+                                <h4>Quantos anos dura um sistema de energia solar fotovoltaica ?</h4>
+
+                                <div class="arrow-down">
+                                    <img src="./imgs/icon-arrow-down.svg" alt="Ícone de seta para baixo">
+                                </div>
+                            </div>
+
+                            <div class="accordion-content" id="js-accordion-content">
+                                <p>A durabilidade de um sistema fotovoltaico depende da qualidade dos equipamentos utilizados. A Standart oferece os melhores materiais para que sua Energia Solar dure por mais de 25 anos. </p>
+                            </div>
+                        </li>
+
+                        <li class="accordion-item" id="js-accordion-item" data-aos="fade-up">
+                            <div class="accordion-header" id="js-accordion-header">
+                                <h4>Qual a manutenção necessária após a instalação?</h4>
+
+                                <div class="arrow-down">
+                                    <img src="./imgs/icon-arrow-down.svg" alt="Ícone de seta para baixo">
+                                </div>
+                            </div>
+
+                            <div class="accordion-content" id="js-accordion-content">
+                                <p>É indicado que as placas solares sejam limpas 2 vezes ao ano.  As manutenções são de baixa complexidade, não gerando alto custo para o consumidor.</p>
+                            </div>
+                        </li>
+
+                        <li class="accordion-item" id="js-accordion-item" data-aos="fade-up">
+                            <div class="accordion-header" id="js-accordion-header">
+                                <h4>Em tempos nublados/chuvosos, haverá geração de energia?</h4>
+
+                                <div class="arrow-down">
+                                    <img src="./imgs/icon-arrow-down.svg" alt="Ícone de seta para baixo">
+                                </div>
+                            </div>
+
+                            <div class="accordion-content" id="js-accordion-content">
+                                <p>Em tempos nublados e chuvosos ainda se tem a incidência de raios solares que fornecem energia para as placas.</p>
+                            </div>
+                        </li>
+
+                        <li class="accordion-item" id="js-accordion-item" data-aos="fade-up">
+                            <div class="accordion-header" id="js-accordion-header">
+                                <h4>Durante e após o processo de instalação, terei suporte da empresa?</h4>
+
+                                <div class="arrow-down">
+                                    <img src="./imgs/icon-arrow-down.svg" alt="Ícone de seta para baixo">
+                                </div>
+
+
+                            </div>
+
+                            <div class="accordion-content" id="js-accordion-content">
+                                <p>A Standart conta com uma equipe especializada e pronta para te atender. Acompanhamos toda a trajetória do cliente durante e após a instalação da Energia Solar.</p>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <section class="s-location" id="section-location">
+            <div class="container">
+                <div class="info-location" data-aos="fade-left">
+                    <h2>Onde encontrar a STANDART</h2>
+
+                    <ul>
+                        <li><img src="./imgs/icon-map.svg" alt="Ícone de pino de mapa"><span>Rua Roma, n° 454. Jardim Itália 2, Sinop - MT, 78555-368</span></li>
+                    
+                        <li><img src="./imgs/icon-tell-blu.svg" alt="Ícone de telefone"><span>(66) 99997-0463</span></li>
+                    </ul>
+
+                    <a href="https://www.google.com/maps/place/Standart+Engenharia+El%C3%A9trica+-+Energia+Solar+-+Consultoria,+Projeto+e+Execu%C3%A7%C3%A3o+El%C3%A9trica/@-11.8488751,-55.5345184,15z/data=!4m2!3m1!1s0x0:0x8177525160e6b4c1?sa=X&ved=2ahUKEwiJkemKl9b7AhWdOrkGHerdCCAQ_BJ6BAhIEAg" class="btn btn-secondary" target="_blank">Abrir no Google Maps</a>
+
+    
+                    
+                </div>
+
+                <div class="map" data-aos="fade-left">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3904.805705076443!2d-55.53670708459577!3d-11.84886984147815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93a7815492606bbb%3A0x8177525160e6b4c1!2sStandart%20Engenharia%20El%C3%A9trica%20-%20Energia%20Solar%20-%20Consultoria%2C%20Projeto%20e%20Execu%C3%A7%C3%A3o%20El%C3%A9trica!5e0!3m2!1spt-BR!2sbr!4v1669820297435!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            
+        </section>
+    </main>
+
+  
+    <footer>
+        <div class="container">
+            <div class="top">
+                <div class="logo"><img src="./imgs/logo-standart-estendida.svg" alt="Logo Standart"></div>
+
+                <div class="share">
+                    <ul class="icons-social-media">
+                        <li><a href="https://www.youtube.com/channel/UC09S9hcnOUWI5dFQZadEQ-w" class="social-media"  target="_blank"><img src="./imgs/icon-youtube.svg" alt="Ícone do Youtube"></a></li>
+
+                        <li><a href="https://www.instagram.com/standarteng/" class="social-media" target="_blank"><img src="./imgs/icon-instagram-white.svg" alt="Ícone do Instagram" ></a></li>
+                        
+                        <li><a href="https://www.facebook.com/standarteng" class="social-media" target="_blank"><img src="./imgs/icon-facebook-white.svg" alt="Ícone do Facebook"></a></li>
+    
+                        <li><a href="mailto:contato@standart.eng.br?" class="social-media" target="_blank"><img src="./imgs/icon-mail-white.svg" alt="Ícone de email"></a></li>
+    
+                        <li><a href="tel:66999970463" class="social-media"><img src="./imgs/icon-phone-white.svg" alt="Ícone de telefone"></a></li>
+                    </ul>
+
+                    <a href="#section-contato">
+                        <button class="btn btn-primary" id="js-redirect-to-form">Fazer orçamento</button>
+                    </a>
+
+                    
+
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="main">
+            <div class="container">
+                <nav>
+                    <div class="item">
+                        <strong>Página inicial</strong>
+    
+                        <ul class="js-nav-footer">
+                            <li><a href="#section-sobre">Sobre</a></li>
+                            <li><a href="#section-energia-solar">Seção Energia Solar</a></li>
+                            <li><a href="#section-services">Serviços</a></li>
+                            <li><a href="#section-projetos">Projetos</a></li>
+                            <li><a href="#section-depoimentos">Depoimentos</a></li>
+                            <li><a href="#section-contato">Contato</a></li>
+                            <li><a href="#section-location">Localização</a></li>
+                        </ul>
+                    </div>
+    
+                    <div class="item">
+                        <strong>Serviços</strong>
+    
+                        <ul>
+                            <li><a href="">Energia Solar</a></li>
+                            <li><a href="">Gestão de energia</a></li>
+                            <li><a href="">Análise de eficiência energética</a></li>
+                            <li><a href="">Banco de capacitores</a></li>
+                            <li><a href="">Montagem e manutenção de quadros elétricos</a></li>
+                            <li><a href="">Projetos e instalações elétricas</a></li>
+                            <li><a href="">Ver mais</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="item">
+                        <strong>Projetos</strong>
+    
+                        <ul>
+                            <li><a href="../projects.html">Ver todos os projetos</a></li>
+                            <li><a href="../contact.html">Orçamento</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="item">
+                        <strong>Endereço</strong>
+    
+                        <ul>
+                            <li><a href="https://www.google.com/maps/place/Standart+Engenharia+El%C3%A9trica+-+Energia+Solar+-+Consultoria,+Projeto+e+Execu%C3%A7%C3%A3o+El%C3%A9trica/@-11.8488751,-55.5345184,15z/data=!4m5!3m4!1s0x0:0x8177525160e6b4c1!8m2!3d-11.8488751!4d-55.5345184" target="_blank">Rua Carini, N 590, Sala B
+                                Sinop-MT, 78555-398, BR</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            
+        </div>
+
+        
+        <div class="copywrite">
+
+            <div class="container">
+                <span>© 2022 Standart Solucoes em Energia LTDA </span>
+                <a href="https://www.instagram.com/dev_vitorlinsbinski/" target="_blank"><span>Desenvolvido por: @dev_vitorlinsbinski</span></a>
+            </div>
+
+        </div>
+        
+    </footer>
+
+    <script src="./js/plugins.js"></script>
+    <script src="./js/all.js"></script>
+</body>
+</html>
